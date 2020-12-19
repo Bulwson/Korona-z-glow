@@ -1,0 +1,21 @@
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:pink;
+}
+.przycisk{
+    float: left;
+    margin: 10px;
+}
+.centrum{
+    float: left;
+}
+.panel{
+    float: right;;
+}
+#logo{
+    float: left;
+    margin: 10px;
+}
+  

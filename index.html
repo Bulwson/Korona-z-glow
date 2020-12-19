@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="main.js"></script>
+
+<link rel="stylesheet" href="./css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" defer></script>
+<script src="main.js" defer></script>
 
 <head>
     <meta charset="UTF-8">
@@ -9,28 +12,40 @@
 
 <body onload="getData()">
     <div id="bar">
-        <a href="">
+        <a href="" id="logo">
             <h1>LOGO</h1>
         </a>
-        <a href="">
-            <h1>SZCZEPIONKA</h1>
-        </a>
-        <a href="">
-            <h1>ŹRÓDŁA</h1>
-        </a>
-        <a href="">
-            <h1>PROFILAKTYKA</h1>
-        </a>
-        <a href="">
-            <h1>MAPA</h1>
-        </a>
-        <a href="">
-            <h1>AUTORZY</h1>
-        </a>
+        <div class="panel">
+            <a href="" class="przycisk">
+                <h1>SZCZEPIONKA</h1>
+            </a>
+            <a href="" class="przycisk">
+                <h1>ŹRÓDŁA</h1>
+            </a>
+            <a href="" class="przycisk">
+                <h1>PROFILAKTYKA</h1>
+            </a>
+            <a href="" class="przycisk">
+                <h1>MAPA</h1>
+            </a>
+            <a href="" class="przycisk">
+                <h1>AUTORZY</h1>
+            </a>
+        </div>
     </div>
-    <h2 id='dane'>
-        xd
-    </h2>
+    <div class="centrum">
+        <h2 id='zachorowania'>
+            W poprzednim dniu zachorowało:
+        </h2>
+        <h2 id='smierci'>
+            W poprzednim dniu zmarło:
+        </h2>
+    </div>
+    <div style="width: 100%; overflow-x: auto; overflow-y: hidden">
+        <div style="width: 3000px; height: 300px">
+            <canvas id="chart" height="300" width="0"></canvas>
+        </div>
+    </div>
 </body>
 
 </html>
