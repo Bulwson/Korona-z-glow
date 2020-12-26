@@ -1,21 +1,72 @@
+@font-face {
+	font-family: Montserrat-Regular;
+	src: url(/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+	font-family: Montserrat-light;
+	src: url(/fonts/Montserrat-Light.ttf);
+}
+html{
+    font-family: Montserrat-Regular;
+    font-size: 1vw;
+}
 a{
     text-decoration: none;
 }
-a:hover{
-    color:pink;
+img{
+    max-width: 100%;
+    max-height: 100%;
 }
-.przycisk{
+h1,h3{
+    display: inline;
+    text-align: center;
+}
+.nav{
+    size: 50%;
+    overflow: auto;
+    box-shadow: 0.5vw 0.5vw 1.5vw #7e8081;
+    background-color: rgba(232, 237, 232, 0.575);
+    list-style: none;
+    font-size: 2vw;
+}
+.nav li{
+    text-align: center;
+    float: right;
+}
+.nav li:first-child {
     float: left;
-    margin: 10px;
+    margin-left: -2vw;
+}
+.nav li a {
+    display: block;
+    color:green;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+#zachorowania{
+    color:red;
 }
 .centrum{
     float: left;
+    overflow: auto;
+    display: relative;
+    width: 100%;
+    margin-bottom: 2vw;
+    box-shadow: 0.5vw 0.5vw 1.5vw #7e8081;
+    background-color: rgba(232, 237, 232, 0.575);
+}
+.info{
+    display: inline-block;
+    padding:0.5vw 1vw;
+    width: 50%;
+    margin: 0 auto;
 }
 .panel{
     float: right;;
 }
-#logo{
-    float: left;
-    margin: 10px;
+.news{
+    height: 20vw;
+    width: 15vw;
 }
-  
