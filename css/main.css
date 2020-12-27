@@ -1,6 +1,6 @@
 @font-face {
 	font-family: Montserrat-Regular;
-	src: url(/fonts/Montserrat-Regular.ttf);
+	src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
 }
 
 @font-face {
@@ -25,8 +25,6 @@ h1,h3{
 .nav{
     size: 50%;
     overflow: auto;
-    box-shadow: 0.5vw 0.5vw 1.5vw #7e8081;
-    background-color: rgba(232, 237, 232, 0.575);
     list-style: none;
     font-size: 2vw;
 }
@@ -48,14 +46,16 @@ h1,h3{
 #zachorowania{
     color:red;
 }
-.centrum{
+.section{
+    box-shadow: 0.5vw 0.5vw 1.5vw #7e8081;
+    background-color: rgba(232, 237, 232, 0.575);
+}
+#centrum{
     float: left;
     overflow: auto;
     display: relative;
     width: 100%;
     margin-bottom: 2vw;
-    box-shadow: 0.5vw 0.5vw 1.5vw #7e8081;
-    background-color: rgba(232, 237, 232, 0.575);
 }
 .info{
     display: inline-block;
@@ -69,4 +69,20 @@ h1,h3{
 .news{
     height: 20vw;
     width: 15vw;
+    margin-left: 2vw;
+    float:left;
+    padding-left: 6.5vw;
+}
+.text{
+    float: left;
+}
+#newsbar{
+    margin: 2vw 0vw 1vw 0vw;
+    text-align: center;
+}
+.newstext{
+    color:black
+}
+#testy{
+    color:green;
 }

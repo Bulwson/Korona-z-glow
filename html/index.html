@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="../css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" defer></script>
+<script src="../js/main.js" defer></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+
+<body>
+    <div id="navbar" class="section">
+        <ul class="nav">
+            <li><a href="#">LOGO</a></li>
+            <li><a href="#">SZCZEPIONKA</a></li>
+            <li><a href="#">ŹRÓDŁA</a></li>
+            <li><a href="#">PROFILAKTYKA</a></li>
+            <li><a href="mapa.html">MAPA</a></li>
+            <li><a href="#">AUTORZY</a></li>
+        </ul>
+    </div>
+    <div class="section" id="centrum">
+        <div class='info'>
+            <h3>W poprzednim dniu zachorowało:</h3>
+            <h1 id='zachorowania'></h1>
+        </div>
+        <div class='info'>
+            <h3>W poprzednim dniu umarło:</h3>
+            <h1 id='smierci'></h1>
+        </div>
+        <div class='info'>
+            <h3>Ilość testów przeprowadzona wczoraj:</h3>
+            <h1 id="testy">1</h1>
+        </div>
+    </div>
+    <div>
+        <canvas id="chart" height="300" width="0"></canvas>
+    </div>
+    <div class='section'>
+        <div class='section' id="newsbar">
+            <h1>NEWSY</h1>
+        </div>
+        <a href="#"></a>
+        <div class='news'>
+            <img src="../img/pudzian.jpg">
+            <span class="text">
+                <h3 class="newstext">Czy pudzian dotnie na sopot?</h3>
+                <span class="newstext">Znany wielki polak mówi: "Nie wiem (...)"</span>
+            </span>
+        </div>
+        </a>
+        <a href="#">
+            <div class='news'>
+                <img src="../img/pudzian.jpg">
+                <span class="text">
+                    <h3 class="newstext">Czy małysz skoczy 102 metry?</h3>
+                    <span class="newstext">Znany wielki polak mówi: "Nie wiem (...)"</span>
+                </span>
+            </div>
+        </a>
+        <a href="#">
+            <div class='news'>
+                <img src="../img/pudzian.jpg">
+                <span class="text">
+                    <h3 class="newstext">Czy Najman wygra?</h3>
+                    <span class="newstext">Znany wielki polak mówi: "Nie wiem (...)"</span>
+                </span>
+            </div>
+        </a>
+        <a href="#">
+            <div class='news'>
+                <img src="../img/pudzian.jpg">
+                <span class="text">
+                    <h3 class="newstext">Czy zdam?</h3>
+                    <span class="newstext">Znany wielki polak mówi: "Nie wiem (...)"</span>
+                </span>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
