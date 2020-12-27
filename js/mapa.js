@@ -83,6 +83,10 @@ function drawDate() {
         days_element.innerHTML = '';
         let amount_days = 31;
 
+        if (month == 3 || month == 5 || month == 8 || month == 10) {
+            amount_days = 30
+        }
+
         if (month == 1) {
             amount_days = 28;
         }
@@ -106,6 +110,7 @@ function drawDate() {
                 selected_date_element.dataset.value = selectedDate;
 
                 populateDates();
+                dates_element.classList.toggle('active');
             });
 
             days_element.appendChild(day_element);
