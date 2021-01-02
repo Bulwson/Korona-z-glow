@@ -1,3 +1,16 @@
+@font-face {
+	font-family: Montserrat-Regular;
+	src: url("../fonts//Montserrat-Regular.ttf");
+}
+
+@font-face {
+	font-family: Montserrat-light;
+	src: url("../fonts/Montserrat-Light.ttf");
+}
+html{
+    font-family: Montserrat-Light;
+    font-size: 1vw;
+}
 .nav{
     size: 50%;
     overflow: auto;
@@ -20,7 +33,8 @@
 }
 .section{
     box-shadow: 0.5vw 0.5vw 1.5vw #7e8081;
-    background-color: rgba(232, 237, 232, 0.575);
+	background-color: rgba(232, 237, 232, 0.575);
+	border-radius: 2vw;
 }
 svg:hover{
     cursor: pointer;
@@ -29,7 +43,10 @@ path:hover{
     opacity: 0.5;
 }
 #info{
-    float: right;
+	float: right;
+	margin-right: 5vw;
+	margin-top:3vw;
+	padding:0.5vw 0.5vw 0.5vw 0.5vw;
 }
 .date-picker {
 	position: relative;
@@ -95,10 +112,6 @@ path:hover{
 	background-color: #F3F3F3;
 }
 
-.date-picker .dates .month .arrows:active {
-	background-color: #00CA85;
-}
-
 .date-picker .dates .days {
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
@@ -110,6 +123,6 @@ path:hover{
 	align-items: center;
 	color: #313131;
 }
-.date-picker .dates .days .day.selected {
-	background-color: #00CA85;
+.date-picker .dates .days .day:hover {
+	background-color: #F3F3F3;
 }

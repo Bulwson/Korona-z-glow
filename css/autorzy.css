@@ -7,21 +7,13 @@
 	font-family: Montserrat-light;
 	src: url("../fonts/Montserrat-Light.ttf");
 }
+a{
+    text-decoration: none;
+}
 html{
     font-family: Montserrat-Light;
     font-size: 1vw;
     min-height: 100%;
-}
-a{
-    text-decoration: none;
-}
-img{
-    max-width: 100%;
-    max-height: 100%;
-}
-h1,h3{
-    display: inline;
-    text-align: center;
 }
 .nav{
     size: 50%;
@@ -42,49 +34,12 @@ h1,h3{
     color:green;
     text-decoration: none;
     padding: 10px;
-  }
-  
-#zachorowania{
-    color:red;
 }
 .section{
     box-shadow: 0.5vw 0.5vw 1.5vw #7e8081;
     background-color: rgba(232, 237, 232, 0.575);
     border-radius: 2vw;
 }
-#centrum{
-    float: left;
-    overflow: auto;
-    display: relative;
-    width: 100%;
-    margin-bottom: 2vw;
-}
-.info{
-    display: inline-block;
-    padding:0.5vw 1vw;
-    width: 50%;
-    margin: 0 auto;
-}
-.panel{
-    float: right;;
-}
-.news{
-    height: 20vw;
-    width: 15vw;
-    margin-left: 1vw;
-    float:left;
-    padding-left: 6.5vw;
-}
-.text{
-    float: left;
-}
-#newsbar{
-    margin: 2vw 0vw 1vw 0vw;
-    text-align: center;
-}
-.newstext{
-    color:black
-}
-#testy{
-    color:green;
+#main{
+    padding: 1vw 1vw 1vw 1vw;
 }
