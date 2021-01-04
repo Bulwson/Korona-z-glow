@@ -157,6 +157,6 @@ function getData() {
 }
 
 function displayName(ele) {
-    document.getElementById('infoid').innerHTML = `W wojewodztwie ${ele.id} zachorowało:`
+    document.getElementById('infoid').innerHTML = ele.id
     document.getElementById('sicked').innerHTML = dict[ele.id]
 }
