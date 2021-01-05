@@ -143,7 +143,7 @@ function drawDate() {
         return day + ' / ' + month + ' / ' + year;
     }
 }
-
+let last
 document.addEventListener('DOMContentLoaded', getData(), false);
 function getData() {
     fetch('https://api.covid19api.com/total/country/poland').then(
@@ -155,8 +155,20 @@ function getData() {
         )
     )
 }
-
+let pierwszy = true
 function displayName(ele) {
-    document.getElementById('infoid').innerHTML = ele.id
-    document.getElementById('sicked').innerHTML = dict[ele.id]
+    if (pierwszy) {
+        ele.classList.toggle("active")
+        document.getElementById('infoid').innerHTML = ele.id
+        document.getElementById('sicked').innerHTML = dict[ele.id]
+        last = ele
+        pierwszy = false
+    }
+    else {
+        last.classList.toggle("active")
+        ele.classList.toggle("active")
+        document.getElementById('infoid').innerHTML = ele.id
+        document.getElementById('sicked').innerHTML = dict[ele.id]
+        last = ele
+    }
 }

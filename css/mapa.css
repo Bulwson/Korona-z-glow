@@ -36,11 +36,16 @@ html{
 	background-color: rgba(232, 237, 232, 0.575);
 	border-radius: 2vw;
 }
-svg:hover{
-    cursor: pointer;
-}
 path:hover{
-    opacity: 0.5;
+	opacity: 0.5;
+	cursor: pointer;
+}
+.wojewodztwo.active{
+	opacity: 0.5;
+}
+.wojewodztwo{
+	fill:#294066;
+	fill-opacity:1;
 }
 #info{
 	float: right;
