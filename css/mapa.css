@@ -46,7 +46,14 @@ path:hover{
 	float: right;
 	margin-right: 5vw;
 	margin-top:3vw;
-	padding:6vw 6vw 6vw 6vw;
+	padding:1vw 1vw 1vw 1vw;
+	width: 20vw;
+}
+#infoid{
+	width: fit-content;
+}
+#sicked{
+	font-size: 5vw;
 }
 .date-picker {
 	position: relative;
