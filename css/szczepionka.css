@@ -7,6 +7,10 @@
 	font-family: Montserrat-light;
 	src: url("../fonts/Montserrat-Light.ttf");
 }
+html{
+    overflow-y: scroll;
+    width: 100vw;
+}
 #zaszczepieni{
     padding: 1vw 1vw 1vw 1vw;
     margin-bottom: 2vw;
