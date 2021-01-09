@@ -7,6 +7,18 @@
 	font-family: Montserrat-light;
 	src: url("../fonts/Montserrat-Light.ttf");
 }
+#zaszczepieni{
+    padding: 1vw 1vw 1vw 1vw;
+    margin-bottom: 2vw;
+}
+#etapy{
+    padding: 1vw 1vw 1vw 1vw;
+    margin-bottom: 2vw;
+}
+#szczepionka{
+    padding: 1vw 1vw 1vw 1vw;
+    margin-bottom: 2vw;
+}
 .nav{
     size: 50%;
     overflow: auto;
