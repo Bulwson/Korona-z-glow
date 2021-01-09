@@ -32,10 +32,20 @@ a:active{
     margin-left: -2vw;
 }
 .nav li a {
+    color:green;
+}
+.button {
     display: block;
     color:green;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
+  }
+.logopngcont{
+    display: block;
+    padding: 0px 10px 0px 10px;
+}
+.logopng{
+    margin-top:5px;
 }
 html{
     font-family: Montserrat-Light;

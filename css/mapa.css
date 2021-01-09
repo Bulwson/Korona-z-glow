@@ -25,11 +25,18 @@ html{
     float: left;
     margin-left: -2vw;
 }
-.nav li a {
+.button{
     display: block;
     color:green;
     text-decoration: none;
     padding: 10px;
+}
+.logopngcont{
+    display: block;
+    padding: 0px 10px 0px 10px;
+}
+.logopng{
+    margin-top:5px;
 }
 .section{
     box-shadow: 0.5vw 0.5vw 1.5vw #7e8081;
