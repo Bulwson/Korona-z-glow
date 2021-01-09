@@ -7,6 +7,15 @@
 	font-family: Montserrat-light;
 	src: url("../fonts/Montserrat-Light.ttf");
 }
+a{
+    text-decoration: none;
+}
+a:visited{
+    color:black;
+}
+a:active{
+    color:black; 
+}
 .nav{
     size: 50%;
     overflow: auto;
