@@ -1,5 +1,5 @@
 let global
-let dict = {
+const zarazeni = {
     "dolnoslaskie": 15,
     "kujawsko-pomorskie": 0,
     "lubelskie": 1,
@@ -16,7 +16,24 @@ let dict = {
     "warminsko-mazurskie": 12,
     "wielkopolskie": 13,
     "zachodnio-pomorskie": 14,
-
+}
+const lozka = {
+    "dolnoslaskie": 0,
+    "kujawsko-pomorskie": 15,
+    "lubelskie": 14,
+    "lubuskie": 13,
+    "lodzkie": 12,
+    "malopolskie": 11,
+    "mazowieckie": 10,
+    "opolskie": 9,
+    "podkarpackie": 8,
+    "podlaskie": 7,
+    "pomorskie": 6,
+    "slaskie": 5,
+    "swietokrzyskie": 4,
+    "warminsko-mazurskie": 3,
+    "wielkopolskie": 2,
+    "zachodnio-pomorskie": 1,
 }
 
 function drawDate() {
@@ -160,7 +177,9 @@ function displayName(ele) {
     if (pierwszy) {
         ele.classList.toggle("active")
         document.getElementById('infoid').innerHTML = ele.id
-        document.getElementById('sicked').innerHTML = dict[ele.id]
+        document.getElementById('sicked').innerHTML = zarazeni[ele.id]
+        document.getElementById('lozka').innerHTML = lozka[ele.id]
+        document.getElementById('lozka').innerHTML = `Wolne łóżka: ${lozka[ele.id]}`
         last = ele
         pierwszy = false
     }
@@ -168,7 +187,8 @@ function displayName(ele) {
         last.classList.toggle("active")
         ele.classList.toggle("active")
         document.getElementById('infoid').innerHTML = ele.id
-        document.getElementById('sicked').innerHTML = dict[ele.id]
+        document.getElementById('sicked').innerHTML = zarazeni[ele.id]
+        document.getElementById('lozka').innerHTML = `Wolne łóżka: ${lozka[ele.id]}`
         last = ele
     }
 }
