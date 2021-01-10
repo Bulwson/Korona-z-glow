@@ -51,7 +51,7 @@ path:hover{
 	opacity: 0.5;
 }
 .wojewodztwo{
-	fill:#294066;
+	fill:red;
 	fill-opacity:1;
 }
 #info{
@@ -66,6 +66,7 @@ path:hover{
 }
 #sicked{
 	font-size: 5vw;
+	text-align: center;
 }
 .date-picker {
 	position: relative;
